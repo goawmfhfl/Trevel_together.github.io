@@ -1,3 +1,12 @@
+*현재까지 알게된 scss를 사용하는 방법
+
+1. node.js 버전을 15로 유지한다.
+2. sass-loader를 다운받는다. sass-loader@12.3.0" has unmet peer dependency "webpack@^5.0.0".
+3. node sass@5 를 다운받는다.
+
+
+* scss 아키텍처
+http://www.webactually.co.kr/archives/13106
 
 * 브랜치 명 변경하는 방법
 https://kyeoneee.tistory.com/72
