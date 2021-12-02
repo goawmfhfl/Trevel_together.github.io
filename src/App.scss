@@ -26,6 +26,21 @@ body {
       margin-left: 8px;
     }
   }
+  .nav-travel {
+    .list-travelNav {
+      .link-travelNav {
+        position: relative;
+        &.on::before {
+          position: absolute;
+          content: "";
+        }
+      }
+      .link-icon {
+      }
+      .link-tit {
+      }
+    }
+  }
   nav {
     position: sticky;
     .iconbox {
