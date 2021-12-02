@@ -28,16 +28,46 @@ body {
   }
   .nav-travel {
     .list-travelNav {
+      width: 100%;
+      padding: 24px;
       .link-travelNav {
         position: relative;
+        display: inline-block;
+        width: 25%;
+        &.on {
+          color: $main-color-skyblue;
+          .link-box {
+            color: $main-color-skyblue;
+            .link-tit {
+              color: $main-color-skyblue;
+            }
+          }
+        }
         &.on::before {
-          position: absolute;
           content: "";
+          display: inline-block;
+          width: 50%;
+          height: 4px;
+          position: absolute;
+          bottom: -10px;
+          right: 50px;
+          transform: translateX(25px);
+          border-radius: 10px;
+          background-color: $main-color-skyblue;
         }
       }
-      .link-icon {
-      }
-      .link-tit {
+      .link-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .link-icon {
+          font-size: 30px;
+        }
+        .link-tit {
+          font-size: 15px;
+          margin-top: 7px;
+          color: $text-color;
+        }
       }
     }
   }

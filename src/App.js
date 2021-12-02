@@ -10,28 +10,28 @@ function App() {
       </header>
       <nav className="nav-travel">
         <ul className="list-travelNav">
-          <li className="on link-travelNav">
-            <a href="#none">
-              <i className="link-icon">🏖</i>
-              <span>travel</span>
-            </a>
-          </li>
-          <li className="on link-travelNav">
-            <a href="#none">
+          <li className="link-travelNav on">
+            <a href="#none" className="link-box">
               <i className="link-icon">🏖</i>
               <span className="link-tit">travel</span>
             </a>
           </li>
-          <li className="on link-travelNav">
-            <a href="#none">
+          <li className="link-travelNav">
+            <a href="#none" className="link-box">
               <i className="link-icon">🏖</i>
-              <span>travel</span>
+              <span className="link-tit">travel</span>
             </a>
           </li>
-          <li className="on link-travelNav">
-            <a href="#none">
+          <li className="link-travelNav">
+            <a href="#none" className="link-box">
               <i className="link-icon">🏖</i>
-              <span>travel</span>
+              <span className="link-tit">travel</span>
+            </a>
+          </li>
+          <li className="link-travelNav">
+            <a href="#none" className="link-box">
+              <i className="link-icon">🏖</i>
+              <span className="link-tit">travel</span>
             </a>
           </li>
         </ul>
