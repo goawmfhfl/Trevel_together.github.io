@@ -20,6 +20,8 @@ git push -u origin layout_travel_nav
 로컬에서 원격 브랜치 삭제하기
 https://remagine.tistory.com/17
 
+git push origin —-delete branchname
+
 git fetch --all --prune -- 
 git remote prune origin
 
