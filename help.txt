@@ -23,6 +23,8 @@ https://remagine.tistory.com/17
 git fetch --all --prune -- 
 git remote prune origin
 
+머지하기
+git merge(Develop) 추가할 기능 브랜치
 # 컨벤션
 
 ---
@@ -48,4 +50,20 @@ git remote prune origin
 1. 무엇을 수정했는지
 2. 왜 수정했는지
 ```
+
+// 브랜치 작성 규칙
+
+`main`: 제품으로 출시 되는 브랜치
+
+`Develop`: 다음 출시 버전을 개발하는 브랜치
+
+`feature`: 기능을 개발하는 브랜치
+
+- feature_ ***
+
+layout_travel_nav 레이아웃_페이지명_레이아웃 추가부분
+
+Realease: 이번 출시 버전을 준비하는 브랜치
+ex) Realease_1.0.0
+Hotfix: 출시 버전에서 발생한 버그를 수정하는 브랜치.
 

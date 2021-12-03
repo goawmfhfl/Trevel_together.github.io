@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
 import './App.scss';
 
-import TravelPage from './components/pages/TRAVEL/Travel.js'
-import LikesPage from './components/pages/LIKES/Likes.js'
-import InformationPage from './components/pages/INFORMATION/Information.js'
-import MyPage from './components/pages/MYPAGE/MyPage.js'
+import TravelPage from './components/pages/TRAVEL/Travel.js';
+import LikesPage from './components/pages/LIKES/Likes.js';
+import InformationPage from './components/pages/INFORMATION/Information.js';
+import MyPage from './components/pages/MYPAGE/MyPage.js';
+
+import { Link, Route, Switch } from 'react-router-dom';
 
 
 function App() {
@@ -15,10 +17,10 @@ function App() {
         <p className="head_icon">✈️</p>
       </header>
       <div className="container">
-        <TravelPage/>
-        <LikesPage/>
-        <InformationPage/>
-        <MyPage/>
+        <Route exact path="/" component={TravelPage} />
+        <Route exact path="/likes" component={LikesPage} />
+        <Route exact path="/information" component={InformationPage} />
+        <Route exact path="/mypage" component={MyPage} />
       </div>
       <nav>
         <div className="iconbox">
