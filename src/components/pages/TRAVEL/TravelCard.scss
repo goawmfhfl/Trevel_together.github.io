@@ -4,11 +4,11 @@
 .card-list {
   margin-top: 1rem;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
   li {
     width: 45%;
-    margin-left: 5%;
     border-radius: 10px;
     box-shadow: 1px 1px 2px 1px;
     &:nth-child(2) ~ li {
@@ -16,7 +16,7 @@
     }
     .card-cover {
       .card-img {
-        width: 100%;
+        max-width: 100%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         background-image: contain;
