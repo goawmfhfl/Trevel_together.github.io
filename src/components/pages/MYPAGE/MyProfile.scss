@@ -1,3 +1,63 @@
 @import "../../helpers/reset";
 @import "../../helpers/variable";
 @import "../../helpers/extend";
+
+.myprofile-container {
+  margin-top: 2rem;
+  text-align: center;
+  .profile {
+    font-size: 10rem;
+    color: grey;
+  }
+  .mypage-email {
+    margin-top: 1rem;
+    span {
+      font-size: 1.2rem;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: grey;
+        transform: translateX(42%);
+        top: 1.6rem;
+      }
+    }
+  }
+  .mypage-list {
+    margin-top: 3rem;
+    border: 1px solid grey;
+    border-bottom: none;
+    li {
+      position: relative;
+      display: flex;
+      width: 100%;
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        background-color: grey;
+      }
+      i {
+        width: 25%;
+        display: block;
+        font-size: 2.5rem;
+        padding: 1rem 0;
+        margin-left: 1rem;
+      }
+      span {
+        width: 74%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 1rem;
+        font-size: 2rem;
+      }
+    }
+  }
+}
