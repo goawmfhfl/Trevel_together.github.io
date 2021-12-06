@@ -1,0 +1,38 @@
+@import "../../helpers/reset";
+@import "../../helpers/variable";
+@import "../../helpers/extend";
+
+.InfoPagination-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  .pag-left {
+  }
+  .InfoPagination-list {
+    display: flex;
+    list-style: none;
+    margin: 0 2rem;
+    button {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.125rem;
+      margin-left: 1rem;
+      font-size: 1rem;
+      padding: 0px;
+      border: none;
+      color: rgb(51, 51, 51);
+      background-color: transparent;
+      span {
+        position: relative;
+        color: rgb(0, 175, 160);
+        font-size: 1rem;
+        line-height: 1.125rem;
+        font-weight: bold;
+      }
+    }
+  }
+  .pag-right {
+  }
+}
