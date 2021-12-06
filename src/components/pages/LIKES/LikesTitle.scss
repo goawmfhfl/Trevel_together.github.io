@@ -1,3 +1,15 @@
-@import '../../helpers/reset';
-@import '../../helpers/variable';
-@import '../../helpers/extend';
+@import "../../helpers/reset";
+@import "../../helpers/variable";
+@import "../../helpers/extend";
+
+.likes-container {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px #123123;
+  .likes-title {
+    padding: 24px;
+    font-size: 40px;
+  }
+}

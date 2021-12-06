@@ -1,15 +1,14 @@
 import Title from './LikesTitle';
-import Travel from './TravelSlider';
-import Restarant from './restarantSlider';
-import Convinience from './ConvSlider';
+import Slider from './TravelSlider';
 
 function Likes() {
     return (
         <div>
             <Title />
-            <Travel />
-            <Restarant />
-            <Convinience />
+            <Slider />
+            <Slider />
+            <Slider />
+            <Slider />
         </div>
     )
 }

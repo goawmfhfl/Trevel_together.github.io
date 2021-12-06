@@ -1,3 +1,75 @@
-@import '../../helpers/reset';
-@import '../../helpers/variable';
-@import '../../helpers/extend';
+@import "../../helpers/reset";
+@import "../../helpers/variable";
+@import "../../helpers/extend";
+
+.slider {
+  margin-top: 10px;
+  padding: 10px;
+  .slider-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .slider-tit {
+      font-size: 25px;
+    }
+    .slider-icon {
+      font-size: 25px;
+      i:nth-child(1) {
+        margin-right: 5px;
+      }
+    }
+  }
+  .silder-card {
+    margin-top: 10px;
+  }
+  .slider-list {
+    display: flex;
+    li {
+      width: 240px;
+      border-radius: 10px;
+      box-shadow: 1px 1px 2px 1px;
+      margin: 10px 25px 10px 0px;
+      .slider-cover {
+        .slider-img {
+          max-width: 240px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          background-image: contain;
+        }
+      }
+      .slider-cont {
+        box-sizing: border-box;
+        padding: 0 0.5rem;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        .slider-cate {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 5px;
+          .slider-cate-tit {
+            font-size: 14px;
+          }
+          .slider-cate-star {
+            font-size: 14px;
+          }
+        }
+        .slider-desc {
+          font-size: 14px;
+          margin-bottom: 5px;
+          .slider-desc-tit {
+            font-size: 14px;
+            margin-bottom: 5px;
+          }
+          .slider-desc-price {
+            font-size: 14px;
+          }
+          .slider-desc-sale {
+            margin-left: 3px;
+            text-decoration: line-through;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
