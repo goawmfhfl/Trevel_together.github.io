@@ -6,6 +6,7 @@ import LikesPage from './components/pages/LIKES/Likes.js';
 import InformationPage from './components/pages/INFORMATION/Information.js';
 import MyPage from './components/pages/MYPAGE/MyPage.js';
 import CartPage from './components/pages/CART/Cart';
+import ProductsPage from './components/pages/PRODUCTS/products';
 
 import { Link, Route, Switch } from 'react-router-dom';
 
@@ -23,7 +24,7 @@ function App() {
         <Route exact path="/information" component={InformationPage} />
         <Route exact path="/mypage" component={MyPage} />
         <Route exact path="/cart" component={CartPage} />
-        {/* <Route exact path="/detail" component={MyPage} /> */}
+        <Route exact path="/detail" component={ProductsPage} />
       </div>
       <nav>
         <div className="iconbox">
