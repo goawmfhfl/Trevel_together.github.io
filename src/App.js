@@ -11,8 +11,11 @@ import ProductsPage from './components/pages/PRODUCTS/products';
 import { Link, Route, Switch } from 'react-router-dom';
 
 const PageDiv = styled.div`
-  background-color: #fff;
+  display: flex;
+  flex-direction: column;
   max-width: 768px;
+  min-height: 1000px;
+  background-color: #fff;
 `;
 const HeadContainer = styled.div`
   display: flex;
@@ -21,6 +24,7 @@ const HeadContainer = styled.div`
   padding: 30px;
   font-weight: bold;
   color: #000;
+  border-bottom: 1px solid #000;
 `;
 const HeadTitle = styled.h1`
   font-size: 3rem;
@@ -30,6 +34,7 @@ const HeadIcon = styled.p`
   margin-left: 0.5rem;
 `;
 const MainContainer = styled.div`
+  flex-grow: 1;
   padding: 10px;
 `;
 
@@ -40,7 +45,6 @@ const BotContainer = styled.div`
   padding: 24px;
   color: #fff;
   background-color: skyblue;
-  position: sticky;
 `;
 const NavIcon = styled.div`
   display: flex;
@@ -67,7 +71,6 @@ function App() {
             <HeadIcon>✈️</HeadIcon>
           </HeadContainer>
         </header>
-        <hr />
         <section className="section">
           <MainContainer>
             <Route exact path="/" component={TravelPage} />
@@ -78,7 +81,7 @@ function App() {
             <Route exact path="/detail" component={ProductsPage} />
           </MainContainer>
         </section>
-        <nav className="nav">
+        <footer className="footer">
           <BotContainer>
             <a href="#none">
               <NavIcon>
@@ -105,7 +108,7 @@ function App() {
               </NavIcon>
             </a>
           </BotContainer>
-        </nav>
+        </footer>
       </PageDiv>
     </>
   );

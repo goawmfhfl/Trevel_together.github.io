@@ -4,6 +4,13 @@
 body {
   display: flex;
   justify-content: center;
-  height: 100vw;
-  background-color: gray;
+  background-color: bisque;
+}
+
+.header {
+}
+.section {
+  flex-grow: 1;
+}
+.footer {
 }
