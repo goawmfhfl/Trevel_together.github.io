@@ -1,4 +1,5 @@
 import testImg from '../../../test.jpg';
+import { Category, Star, Price, Discount } from '../../Card.style';
 import styled from 'styled-components';
 
 function TravelCard() {
@@ -210,12 +211,6 @@ const CardCont = styled.div`
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 `;
-const Category = styled.span`
-  font-size: 1.2rem;
-`;
-const Star = styled.span`
-  font-size: 1.2rem;
-`;
 const Info = styled.span`
   font-size: 1.2rem;
   margin-bottom: 5px;
@@ -223,14 +218,6 @@ const Info = styled.span`
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-`;
-const Price = styled.span`
-  font-size: 1.2rem;
-`;
-const Discount = styled.span`
-  margin-left: 3px;
-  text-decoration: line-through;
-  font-size: 1.2rem;
 `;
 
 export default TravelCard;
