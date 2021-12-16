@@ -1,125 +1,236 @@
-import "./TravelCard.scss"
-import img from '../../../test.jpg'
+import testImg from '../../../test.jpg';
+import styled from 'styled-components';
 
 function TravelCard() {
-    return (
-        <ul className="card-list">
-            <li>
-                <a href="#none">
-                    <div className="card-cover">
-                        <img src={img} alt="이미지" className="card-img" />
-                    </div>
-                    <div className="card-cont">
-                        <div className="card-cate">
-                            <span className="card-cate-tit">Lorem, ipsum.</span>
-                            <span className="card-cate-star">⭐️⭐️⭐️⭐️⭐️</span>
-                        </div>
-                        <div className="card-desc">
-                            <div class="card-desc-tit multi-ellipsis"> Lorem ipsum dolor sit amet Lorem ipsum dolor
-                  sit amet consectetur adipisicing elit. Quibusdam, voluptatem?</div>
-                            <span class="card-desc-price">USD 9.45</span>
-                            <span class="card-desc-sale">10.22</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#none">
-                    <div className="card-cover">
-                        <img src={img} alt="이미지" className="card-img" />
-                    </div>
-                    <div className="card-cont">
-                        <div className="card-cate">
-                            <span className="card-cate-tit">Lorem, ipsum.</span>
-                            <span className="card-cate-star">⭐️⭐️⭐️⭐️⭐️</span>
-                        </div>
-                        <div className="card-desc">
-                            <div class="card-desc-tit multi-ellipsis"> Lorem ipsum dolor sit amet Lorem ipsum dolor
-                  sit amet consectetur adipisicing elit. Quibusdam, voluptatem?</div>
-                            <span class="card-desc-price">USD 9.45</span>
-                            <span class="card-desc-sale">10.22</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#none">
-                    <div className="card-cover">
-                        <img src={img} alt="이미지" className="card-img" />
-                    </div>
-                    <div className="card-cont">
-                        <div className="card-cate">
-                            <span className="card-cate-tit">Lorem, ipsum.</span>
-                            <span className="card-cate-star">⭐️⭐️⭐️⭐️⭐️</span>
-                        </div>
-                        <div className="card-desc">
-                            <div class="card-desc-tit multi-ellipsis"> Lorem ipsum dolor sit amet Lorem ipsum dolor
-                  sit amet consectetur adipisicing elit. Quibusdam, voluptatem?</div>
-                            <span class="card-desc-price">USD 9.45</span>
-                            <span class="card-desc-sale">10.22</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#none">
-                    <div className="card-cover">
-                        <img src={img} alt="이미지" className="card-img" />
-                    </div>
-                    <div className="card-cont">
-                        <div className="card-cate">
-                            <span className="card-cate-tit">Lorem, ipsum.</span>
-                            <span className="card-cate-star">⭐️⭐️⭐️⭐️⭐️</span>
-                        </div>
-                        <div className="card-desc">
-                            <div class="card-desc-tit multi-ellipsis"> Lorem ipsum dolor sit amet Lorem ipsum dolor
-                  sit amet consectetur adipisicing elit. Quibusdam, voluptatem?</div>
-                            <span class="card-desc-price">USD 9.45</span>
-                            <span class="card-desc-sale">10.22</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#none">
-                    <div className="card-cover">
-                        <img src={img} alt="이미지" className="card-img" />
-                    </div>
-                    <div className="card-cont">
-                        <div className="card-cate">
-                            <span className="card-cate-tit">Lorem, ipsum.</span>
-                            <span className="card-cate-star">⭐️⭐️⭐️⭐️⭐️</span>
-                        </div>
-                        <div className="card-desc">
-                            <div class="card-desc-tit multi-ellipsis"> Lorem ipsum dolor sit amet Lorem ipsum dolor
-                  sit amet consectetur adipisicing elit. Quibusdam, voluptatem?</div>
-                            <span class="card-desc-price">USD 9.45</span>
-                            <span class="card-desc-sale">10.22</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#none">
-                    <div className="card-cover">
-                        <img src={img} alt="이미지" className="card-img" />
-                    </div>
-                    <div className="card-cont">
-                        <div className="card-cate">
-                            <span className="card-cate-tit">Lorem, ipsum.</span>
-                            <span className="card-cate-star">⭐️⭐️⭐️⭐️⭐️</span>
-                        </div>
-                        <div className="card-desc">
-                            <div class="card-desc-tit multi-ellipsis"> Lorem ipsum dolor sit amet Lorem ipsum dolor
-                  sit amet consectetur adipisicing elit. Quibusdam, voluptatem?</div>
-                            <span class="card-desc-price">USD 9.45</span>
-                            <span class="card-desc-sale">10.22</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    )
+  return (
+    <>
+      <CardList>
+        <CardItem>
+          <Link>
+            <ImageCont>
+              <Img src={testImg}></Img>
+            </ImageCont>
+            <CardCont>
+              <Category>this is category</Category>
+              <Star>⭐️⭐️⭐️⭐️⭐️</Star>
+              <Info>
+                Iure, deleniti aut. Non cum expedita nobis facilis velit iure
+                reprehenderit est. ipsum dolor sit amet.
+              </Info>
+              <Price>USD 9.45</Price>
+              <Discount>10.22</Discount>
+            </CardCont>
+          </Link>
+        </CardItem>
+        <CardItem>
+          <Link>
+            <ImageCont>
+              <Img src={testImg}></Img>
+            </ImageCont>
+            <CardCont>
+              <Category>this is category</Category>
+              <Star>⭐️⭐️⭐️⭐️⭐️</Star>
+              <Info>
+                Iure, deleniti aut. Non cum expedita nobis facilis velit iure
+                reprehenderit est. ipsum dolor sit amet.
+              </Info>
+              <Price>USD 9.45</Price>
+              <Discount>10.22</Discount>
+            </CardCont>
+          </Link>
+        </CardItem>
+        <CardItem>
+          <Link>
+            <ImageCont>
+              <Img src={testImg}></Img>
+            </ImageCont>
+            <CardCont>
+              <Category>this is category</Category>
+              <Star>⭐️⭐️⭐️⭐️⭐️</Star>
+              <Info>
+                Iure, deleniti aut. Non cum expedita nobis facilis velit iure
+                reprehenderit est. ipsum dolor sit amet.
+              </Info>
+              <Price>USD 9.45</Price>
+              <Discount>10.22</Discount>
+            </CardCont>
+          </Link>
+        </CardItem>
+        <CardItem>
+          <Link>
+            <ImageCont>
+              <Img src={testImg}></Img>
+            </ImageCont>
+            <CardCont>
+              <Category>this is category</Category>
+              <Star>⭐️⭐️⭐️⭐️⭐️</Star>
+              <Info>
+                Iure, deleniti aut. Non cum expedita nobis facilis velit iure
+                reprehenderit est. ipsum dolor sit amet.
+              </Info>
+              <Price>USD 9.45</Price>
+              <Discount>10.22</Discount>
+            </CardCont>
+          </Link>
+        </CardItem>
+        <CardItem>
+          <Link>
+            <ImageCont>
+              <Img src={testImg}></Img>
+            </ImageCont>
+            <CardCont>
+              <Category>this is category</Category>
+              <Star>⭐️⭐️⭐️⭐️⭐️</Star>
+              <Info>
+                Iure, deleniti aut. Non cum expedita nobis facilis velit iure
+                reprehenderit est. ipsum dolor sit amet.
+              </Info>
+              <Price>USD 9.45</Price>
+              <Discount>10.22</Discount>
+            </CardCont>
+          </Link>
+        </CardItem>
+        <CardItem>
+          <Link>
+            <ImageCont>
+              <Img src={testImg}></Img>
+            </ImageCont>
+            <CardCont>
+              <Category>this is category</Category>
+              <Star>⭐️⭐️⭐️⭐️⭐️</Star>
+              <Info>
+                Iure, deleniti aut. Non cum expedita nobis facilis velit iure
+                reprehenderit est. ipsum dolor sit amet.
+              </Info>
+              <Price>USD 9.45</Price>
+              <Discount>10.22</Discount>
+            </CardCont>
+          </Link>
+        </CardItem>
+        <CardItem>
+          <Link>
+            <ImageCont>
+              <Img src={testImg}></Img>
+            </ImageCont>
+            <CardCont>
+              <Category>this is category</Category>
+              <Star>⭐️⭐️⭐️⭐️⭐️</Star>
+              <Info>
+                Iure, deleniti aut. Non cum expedita nobis facilis velit iure
+                reprehenderit est. ipsum dolor sit amet.
+              </Info>
+              <Price>USD 9.45</Price>
+              <Discount>10.22</Discount>
+            </CardCont>
+          </Link>
+        </CardItem>
+        <CardItem>
+          <Link>
+            <ImageCont>
+              <Img src={testImg}></Img>
+            </ImageCont>
+            <CardCont>
+              <Category>this is category</Category>
+              <Star>⭐️⭐️⭐️⭐️⭐️</Star>
+              <Info>
+                Iure, deleniti aut. Non cum expedita nobis facilis velit iure
+                reprehenderit est. ipsum dolor sit amet.
+              </Info>
+              <Price>USD 9.45</Price>
+              <Discount>10.22</Discount>
+            </CardCont>
+          </Link>
+        </CardItem>
+        <CardItem>
+          <Link>
+            <ImageCont>
+              <Img src={testImg}></Img>
+            </ImageCont>
+            <CardCont>
+              <Category>this is category</Category>
+              <Star>⭐️⭐️⭐️⭐️⭐️</Star>
+              <Info>
+                Iure, deleniti aut. Non cum expedita nobis facilis velit iure
+                reprehenderit est. ipsum dolor sit amet.
+              </Info>
+              <Price>USD 9.45</Price>
+              <Discount>10.22</Discount>
+            </CardCont>
+          </Link>
+        </CardItem>
+        <CardItem>
+          <Link>
+            <ImageCont>
+              <Img src={testImg}></Img>
+            </ImageCont>
+            <CardCont>
+              <Category>this is category</Category>
+              <Star>⭐️⭐️⭐️⭐️⭐️</Star>
+              <Info>
+                Iure, deleniti aut. Non cum expedita nobis facilis velit iure
+                reprehenderit est. ipsum dolor sit amet.
+              </Info>
+              <Price>USD 9.45</Price>
+              <Discount>10.22</Discount>
+            </CardCont>
+          </Link>
+        </CardItem>
+      </CardList>
+    </>
+  );
 }
 
-export default TravelCard
+const CardList = styled.ul`
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+`;
+const CardItem = styled.li`
+  width: 45%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 1px;
+  &:nth-child(2) ~ li {
+    margin-top: 1rem;
+  }
+`;
+const Link = styled.a``;
+const ImageCont = styled.figure`
+  box-sizing: border-box;
+`;
+const Img = styled.img`
+  max-width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-image: contain;
+`;
+const CardCont = styled.div`
+  padding: 0 0.5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+`;
+const Category = styled.span`
+  font-size: 1.2rem;
+`;
+const Star = styled.span`
+  font-size: 1.2rem;
+`;
+const Info = styled.span`
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+`;
+const Price = styled.span`
+  font-size: 1.2rem;
+`;
+const Discount = styled.span`
+  margin-left: 3px;
+  text-decoration: line-through;
+  font-size: 1.2rem;
+`;
+
+export default TravelCard;
