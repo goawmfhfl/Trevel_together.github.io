@@ -1,4 +1,3 @@
-import './productCont.scss';
 import styled from 'styled-components';
 import { Info, Category, Star, Price, Discount } from '../../Card.style';
 import img from '../../../test.jpg';
