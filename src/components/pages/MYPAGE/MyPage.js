@@ -1,6 +1,5 @@
 import { SubTitle, SubText } from '../../SubTitle.style';
 import Profile from './MyProfile';
-import List from './MyList';
 
 function MyPage() {
   return (
@@ -9,7 +8,6 @@ function MyPage() {
         <SubText>MyPage</SubText>
       </SubTitle>
       <Profile />
-      <List />
     </div>
   );
 }
