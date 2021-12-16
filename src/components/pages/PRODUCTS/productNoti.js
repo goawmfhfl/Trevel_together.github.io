@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import './productNoti.scss';
 
 function ProductNoti() {
   return (
