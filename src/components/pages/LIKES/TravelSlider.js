@@ -1,79 +1,155 @@
 import './TravelSlider.scss';
-import img from '../../../test.jpg'
+import testImg from '../../../test.jpg';
+import {
+  Card,
+  Link,
+  CardList,
+  CardItem,
+  ImgCont,
+  Img,
+  DescCont,
+  CategoryCont,
+  Category,
+  Star,
+  Desc,
+} from '../../Card.style';
+import styled from 'styled-components';
 
 function TravelSlider() {
-    return (
-        <div>
-            <div className="slider">
-                <div className="slider-title">
-                    <h2 className="slider-tit">Travel</h2>
-                    <div className="slider-icon">
-                        <i>⬅</i>
-                        <i>➡</i>
-                    </div>
-                </div>
-                <ul className="slider-list">
-                    <li>
-                        <a href="#none">
-                            <div className="slider-cover">
-                                <img src={img} alt="이미지" className="slider-img" />
-                            </div>
-                            <div className="slider-cont">
-                                <div className="slider-cate">
-                                    <span className="slider-cate-tit">Lorem, ipsum.</span>
-                                    <span className="slider-cate-star">⭐️⭐️⭐️⭐️⭐️</span>
-                                </div>
-                                <div className="slider-desc">
-                                    <div class="slider-desc-tit multi-ellipsis"> Lorem ipsum dolor sit amet Lorem ipsum dolor
-                  sit amet consectetur adipisicing elit. Quibusdam, voluptatem?</div>
-                                    <span class="slider-desc-price">USD 9.45</span>
-                                    <span class="slider-desc-sale">10.22</span>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#none">
-                            <div className="slider-cover">
-                                <img src={img} alt="이미지" className="slider-img" />
-                            </div>
-                            <div className="slider-cont">
-                                <div className="slider-cate">
-                                    <span className="slider-cate-tit">Lorem, ipsum.</span>
-                                    <span className="slider-cate-star">⭐️⭐️⭐️⭐️⭐️</span>
-                                </div>
-                                <div className="slider-desc">
-                                    <div class="slider-desc-tit multi-ellipsis"> Lorem ipsum dolor sit amet Lorem ipsum dolor
-                  sit amet consectetur adipisicing elit. Quibusdam, voluptatem?</div>
-                                    <span class="slider-desc-price">USD 9.45</span>
-                                    <span class="slider-desc-sale">10.22</span>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#none">
-                            <div className="slider-cover">
-                                <img src={img} alt="이미지" className="slider-img" />
-                            </div>
-                            <div className="slider-cont">
-                                <div className="slider-cate">
-                                    <span className="slider-cate-tit">Lorem, ipsum.</span>
-                                    <span className="slider-cate-star">⭐️⭐️⭐️⭐️⭐️</span>
-                                </div>
-                                <div className="slider-desc">
-                                    <div class="slider-desc-tit multi-ellipsis"> Lorem ipsum dolor sit amet Lorem ipsum dolor
-                  sit amet consectetur adipisicing elit. Quibusdam, voluptatem?</div>
-                                    <span class="slider-desc-price">USD 9.45</span>
-                                    <span class="slider-desc-sale">10.22</span>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+  return (
+    <div>
+      <div className="slider">
+        <div className="slider-title">
+          <h2 className="slider-tit">Travel</h2>
+          <div className="slider-icon">
+            <i>⬅</i>
+            <i>➡</i>
+          </div>
         </div>
-    )
+        <Card>
+          <Link>
+            <LikesList>
+              <LikesItem>
+                <ImgCont>
+                  <Img src={testImg}></Img>
+                </ImgCont>
+                <DescCont>
+                  <CategoryCont>
+                    <Category>this is Category</Category>
+                    <Star>⭐️⭐️⭐️⭐️⭐️</Star>
+                  </CategoryCont>
+                  <Desc>
+                    Lorem ipsum dolor sit a m e t consectetur adipisicing
+                    veritatis sunt vel? Error velit expedita voluptate
+                  </Desc>
+                </DescCont>
+              </LikesItem>
+              <LikesItem>
+                <ImgCont>
+                  <Img src={testImg}></Img>
+                </ImgCont>
+                <DescCont>
+                  <CategoryCont>
+                    <Category>this is Category</Category>
+                    <Star>⭐️⭐️⭐️⭐️⭐️</Star>
+                  </CategoryCont>
+                  <Desc>
+                    Lorem ipsum dolor sit a m e t consectetur adipisicing
+                    veritatis sunt vel? Error velit expedita voluptate
+                  </Desc>
+                </DescCont>
+              </LikesItem>
+              <LikesItem>
+                <ImgCont>
+                  <Img src={testImg}></Img>
+                </ImgCont>
+                <DescCont>
+                  <CategoryCont>
+                    <Category>this is Category</Category>
+                    <Star>⭐️⭐️⭐️⭐️⭐️</Star>
+                  </CategoryCont>
+                  <Desc>
+                    Lorem ipsum dolor sit a m e t consectetur adipisicing
+                    veritatis sunt vel? Error velit expedita voluptate
+                  </Desc>
+                </DescCont>
+              </LikesItem>
+              <LikesItem>
+                <ImgCont>
+                  <Img src={testImg}></Img>
+                </ImgCont>
+                <DescCont>
+                  <CategoryCont>
+                    <Category>this is Category</Category>
+                    <Star>⭐️⭐️⭐️⭐️⭐️</Star>
+                  </CategoryCont>
+                  <Desc>
+                    Lorem ipsum dolor sit a m e t consectetur adipisicing
+                    veritatis sunt vel? Error velit expedita voluptate
+                  </Desc>
+                </DescCont>
+              </LikesItem>
+              <LikesItem>
+                <ImgCont>
+                  <Img src={testImg}></Img>
+                </ImgCont>
+                <DescCont>
+                  <CategoryCont>
+                    <Category>this is Category</Category>
+                    <Star>⭐️⭐️⭐️⭐️⭐️</Star>
+                  </CategoryCont>
+                  <Desc>
+                    Lorem ipsum dolor sit a m e t consectetur adipisicing
+                    veritatis sunt vel? Error velit expedita voluptate
+                  </Desc>
+                </DescCont>
+              </LikesItem>
+              <LikesItem>
+                <ImgCont>
+                  <Img src={testImg}></Img>
+                </ImgCont>
+                <DescCont>
+                  <CategoryCont>
+                    <Category>this is Category</Category>
+                    <Star>⭐️⭐️⭐️⭐️⭐️</Star>
+                  </CategoryCont>
+                  <Desc>
+                    Lorem ipsum dolor sit a m e t consectetur adipisicing
+                    veritatis sunt vel? Error velit expedita voluptate
+                  </Desc>
+                </DescCont>
+              </LikesItem>
+              <LikesItem>
+                <ImgCont>
+                  <Img src={testImg}></Img>
+                </ImgCont>
+                <DescCont>
+                  <CategoryCont>
+                    <Category>this is Category</Category>
+                    <Star>⭐️⭐️⭐️⭐️⭐️</Star>
+                  </CategoryCont>
+                  <Desc>
+                    Lorem ipsum dolor sit a m e t consectetur adipisicing
+                    veritatis sunt vel? Error velit expedita voluptate
+                  </Desc>
+                </DescCont>
+              </LikesItem>
+            </LikesList>
+          </Link>
+        </Card>
+      </div>
+    </div>
+  );
 }
+const LikesList = styled(CardList)`
+  justify-content: start;
+  flex-wrap: nowrap;
+`;
+const LikesItem = styled(CardItem)`
+  &:nth-child(1) ~ li {
+    margin-top: 0rem;
+    margin-left: 2rem;
+  }
+`;
 
 export default TravelSlider;
