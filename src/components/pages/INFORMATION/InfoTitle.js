@@ -1,11 +1,11 @@
-import './InfoTitle.scss';
+import { SubTitle, SubText } from '../../SubTitle.style';
 
 function InfoTitle() {
-    return (
-        <div className="Info-container">
-            <h2 className="info-title">Information</h2>
-        </div>
-    )
+  return (
+    <SubTitle>
+      <SubText>InforMation</SubText>
+    </SubTitle>
+  );
 }
 
 export default InfoTitle;
