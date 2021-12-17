@@ -1,95 +1,157 @@
-import './CartList.scss';
 import img from '../../../test.jpg';
-
+import styled from 'styled-components';
 
 function CartList() {
-    return (
-        <div className="cart-wrapper">
-            <header className="cart-header">
-                <label for="cart">
-                    <input type="checkbox" id="cart" />
-                    <span>SALECT ALL</span>
-                </label>
-                <button>
-                    <span>REMOVE SELECTED</span>
-                </button>
-            </header>
-            <hr />
-            <ul className="cart-item-list">
-                <li className="cart-items">
-                    <label htmlFor="item">
-                        <input type="checkbox" id="item" className="cart-checkbox" />
-                    </label>
-                    <div className="cart-item-product">
-                        <img src={img} alt="상품" className="cart-img" />
-                        <div className="cart-item-cont">
-                            <h3 className="cart-cont-tit">O'sulloc</h3>
-                            <span className="cart-cont-desc multi-ellipsis">[30%]Gr[30%]e[30%]en Tead Leage De char tcha rtchartchart</span>
-                        </div>
-                    </div>
-                    <div className="cart-price">
-                        <div className="cart-price-count">
-                            <i class="far fa-minus-square"></i>
-                            <span className="item-counter">1</span>
-                            <i class="far fa-plus-square"></i>
-                        </div>
-                        <div className="cart-money">
-                            <span className="cart-money-type">USD</span>
-                            <strong className="cart-money-price">4.50</strong>
-                        </div>
-                    </div>
-                </li>
-                <li className="cart-items">
-                    <label htmlFor="item">
-                        <input type="checkbox" id="item" className="cart-checkbox" />
-                    </label>
-                    <div className="cart-item-product">
-                        <img src={img} alt="상품" className="cart-img" />
-                        <div className="cart-item-cont">
-                            <h3 className="cart-cont-tit">O'sulloc</h3>
-                            <span className="cart-cont-desc multi-ellipsis">[30%]Gr[30%]e[30%]en Tead Leage De char tcha rtchartchart</span>
-                        </div>
-                    </div>
-                    <div className="cart-price">
-                        <div className="cart-price-count">
-                            <i class="far fa-minus-square"></i>
-                            <span className="item-counter">1</span>
-                            <i class="far fa-plus-square"></i>
-                        </div>
-                        <div className="cart-money">
-                            <span className="cart-money-type">USD</span>
-                            <strong className="cart-money-price">4.50</strong>
-                        </div>
-                    </div>
-                </li>
-                <li className="cart-items">
-                    <label htmlFor="item">
-                        <input type="checkbox" id="item" className="cart-checkbox" />
-                    </label>
-                    <div className="cart-item-product">
-                        <img src={img} alt="상품" className="cart-img" />
-                        <div className="cart-item-cont">
-                            <h3 className="cart-cont-tit">O'sulloc</h3>
-                            <span className="cart-cont-desc multi-ellipsis">[30%]Gr[30%]e[30%]en Tead Leage De char tcha rtchartchart</span>
-                        </div>
-                    </div>
-                    <div className="cart-price">
-                        <div className="cart-price-count">
-                            <i class="far fa-minus-square"></i>
-                            <span className="item-counter">1</span>
-                            <i class="far fa-plus-square"></i>
-                        </div>
-                        <div className="cart-money">
-                            <span className="cart-money-type">USD</span>
-                            <strong className="cart-money-price">4.50</strong>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <hr />
-
-        </div>
-    )
+  return (
+    <Cart>
+      <List>
+        <Item>
+          <Check>
+            <CheckBtn type="checkbox"></CheckBtn>
+          </Check>
+          <Img src={img}></Img>
+          <Content>
+            <DescCont>
+              <Title>TitleTitleTitle</Title>
+              <Desc>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis, enim facilis officiis ea nesciunt iusto assumenda
+              </Desc>
+            </DescCont>
+            <Counter>
+              <Up>Up</Up>
+              <Count>1</Count>
+              <Down>Down</Down>
+            </Counter>
+            <Price>USD 30.65</Price>
+          </Content>
+        </Item>
+        <Item>
+          <Check>
+            <CheckBtn type="checkbox"></CheckBtn>
+          </Check>
+          <Img src={img}></Img>
+          <Content>
+            <DescCont>
+              <Title>TitleTitleTitle</Title>
+              <Desc>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis, enim facilis officiis ea nesciunt iusto assumenda
+              </Desc>
+            </DescCont>
+            <Counter>
+              <Up>Up</Up>
+              <Count>1</Count>
+              <Down>Down</Down>
+            </Counter>
+            <Price>USD 30.65</Price>
+          </Content>
+        </Item>
+        <Item>
+          <Check>
+            <CheckBtn type="checkbox"></CheckBtn>
+          </Check>
+          <Img src={img}></Img>
+          <Content>
+            <DescCont>
+              <Title>TitleTitleTitle</Title>
+              <Desc>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis, enim facilis officiis ea nesciunt iusto assumenda
+              </Desc>
+            </DescCont>
+            <Counter>
+              <Up>Up</Up>
+              <Count>1</Count>
+              <Down>Down</Down>
+            </Counter>
+            <Price>USD 30.65</Price>
+          </Content>
+        </Item>
+        <Item>
+          <Check>
+            <CheckBtn type="checkbox"></CheckBtn>
+          </Check>
+          <Img src={img}></Img>
+          <Content>
+            <DescCont>
+              <Title>TitleTitleTitle</Title>
+              <Desc>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis, enim facilis officiis ea nesciunt iusto assumenda
+              </Desc>
+            </DescCont>
+            <Counter>
+              <Up>Up</Up>
+              <Count>1</Count>
+              <Down>Down</Down>
+            </Counter>
+            <Price>USD 30.65</Price>
+          </Content>
+        </Item>
+      </List>
+    </Cart>
+  );
 }
+
+const Cart = styled.div``;
+const List = styled.ul``;
+const Item = styled.li`
+  display: flex;
+  margin-top: 1rem;
+`;
+const Check = styled.label`
+  display: flex;
+  align-items: center;
+`;
+const CheckBtn = styled.input``;
+
+const Img = styled.img`
+  margin-left: 0.5rem;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 10px;
+`;
+
+const Content = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const DescCont = styled.div`
+  padding-left: 1rem;
+  width: 60%;
+`;
+
+const Title = styled.span`
+  display: block;
+`;
+const Desc = styled.span`
+  display: block;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+`;
+const Counter = styled.div`
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+`;
+const Up = styled.i`
+  font-size: 1.2rem;
+`;
+const Count = styled.i`
+  font-size: 1.2rem;
+`;
+const Down = styled.i`
+  font-size: 1.2rem;
+`;
+const Price = styled.span`
+  display: block;
+  text-align: center;
+  width: 20%;
+  font-size: 1.5rem;
+`;
 
 export default CartList;
