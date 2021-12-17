@@ -1,39 +1,89 @@
+import styled from 'styled-components';
 import './InfoPagination.scss';
 
 function InfoPagination() {
-    return (
-        <div className="InfoPagination-container">
-            <button className="pag-left">⬅️</button>
-            <lo className="InfoPagination-list">
-                <li value="1">
-                    <button>
-                        <span>1</span>
-                    </button>
-                </li>
-                <li value="2">
-                    <button>
-                        <span>2</span>
-                    </button>
-                </li>
-                <li value="3">
-                    <button>
-                        <span>3</span>
-                    </button>
-                </li>
-                <li value="4">
-                    <button>
-                        <span>4</span>
-                    </button>
-                </li>
-                <li value="5">
-                    <button>
-                        <span>5</span>
-                    </button>
-                </li>
-            </lo>
-            <button className="pag-left">➡️</button>
-        </div>
-    )
+  return (
+    <Pigination>
+      <PageHandler>
+        <Left>⬅</Left>
+        <List>
+          <Item>
+            <NumberBtn type="button">
+              <Number>1</Number>
+            </NumberBtn>
+          </Item>
+          <Item>
+            <NumberBtn type="button">
+              <Number>2</Number>
+            </NumberBtn>
+          </Item>
+          <Item>
+            <NumberBtn type="button">
+              <Number>3</Number>
+            </NumberBtn>
+          </Item>
+          <Item>
+            <NumberBtn type="button">
+              <Number>4</Number>
+            </NumberBtn>
+          </Item>
+          <Item>
+            <NumberBtn type="button">
+              <Number>5</Number>
+            </NumberBtn>
+          </Item>
+        </List>
+        <Right>➡</Right>
+      </PageHandler>
+    </Pigination>
+  );
 }
 
+const Pigination = styled.div`
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+`;
+const PageHandler = styled.div`
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+`;
+const Left = styled.i`
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+`;
+const Right = styled.i`
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+`;
+const List = styled.ul`
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+`;
+const Item = styled.li`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+const NumberBtn = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.125rem;
+  font-size: 1rem;
+  padding: 0px;
+  border: none;
+  color: rgb(51, 51, 51);
+  background-color: transparent;
+`;
+
+const Number = styled.span`
+  color: rgb(0, 175, 160);
+  font-size: 1rem;
+  line-height: 1.125rem;
+  font-weight: bold;
+  text-align: center;
+`;
 export default InfoPagination;
