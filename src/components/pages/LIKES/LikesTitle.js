@@ -1,11 +1,11 @@
-import './LikesTitle.scss';
+import { SubTitle, SubText } from '../../SubTitle.style';
 
 function LikesTitle() {
-    return (
-        <div className="likes-container">
-            <h1 className="likes-title">LIKES</h1>
-        </div>
-    )
+  return (
+    <SubTitle>
+      <SubText>LIKES</SubText>
+    </SubTitle>
+  );
 }
 
 export default LikesTitle;
