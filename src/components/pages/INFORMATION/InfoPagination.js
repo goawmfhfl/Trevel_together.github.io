@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import './InfoPagination.scss';
 
 function InfoPagination() {
   return (
