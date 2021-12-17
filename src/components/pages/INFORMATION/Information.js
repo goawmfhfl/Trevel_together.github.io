@@ -1,17 +1,17 @@
 import Title from './InfoTitle';
-import Card from './InfoCard';
+import Post from './InfoPost';
 import Category from './InfoCategory';
 import Pagination from './InfoPagination';
 
 function Information() {
-    return (
-        <div>
-            <Title />
-            <Category />
-            <Card />
-            <Pagination />
-        </div>
-    )
+  return (
+    <div>
+      <Title />
+      <Category />
+      <Post />
+      <Pagination />
+    </div>
+  );
 }
 
 export default Information;
