@@ -1,12 +1,11 @@
-import './CartTitle.scss'
-
+import { SubTitle, SubText } from '../../SubTitle.style';
 
 function CartTitle() {
-    return (
-        <div className="cart-container">
-            <h2 className="cart-title">Cart</h2>
-        </div>
-    )
+  return (
+    <SubTitle>
+      <SubText>Cart</SubText>
+    </SubTitle>
+  );
 }
 
 export default CartTitle;
