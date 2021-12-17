@@ -1,4 +1,3 @@
-import react from 'react';
 import styled from 'styled-components';
 
 export const SubTitle = styled.div`
